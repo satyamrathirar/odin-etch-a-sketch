@@ -1,5 +1,5 @@
 const row = 50;
-const columns = 50;
+const columns = 80;
 
 const gridContainer = document.querySelector("#MyGrid");
 
@@ -13,7 +13,7 @@ for(let i = 0; i < row; i++){
 }
 
 function changeColor(event){
-    event.target.style.backgroundColor = "yellow";
+    event.target.style.backgroundColor = "black";
 }
 
 const gridItems = document.querySelectorAll('.grid-item');
