@@ -1,7 +1,13 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     grid-gap: 10px;
-    width: 300px;
+    width: auto;
     outline: 2px solid red;
+}
+
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
 }
