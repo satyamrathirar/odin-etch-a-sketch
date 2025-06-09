@@ -12,8 +12,18 @@ for(let i = 0; i < row; i++){
     }
 }
 
-function changeColor(event){
-    event.target.style.backgroundColor = "black";
+let mouseDown = false;
+
+document.body.addEventListener('mousedown', () => mouseDown = true);
+document.body.addEventListener('mouseup', () => mouseDown = false);
+
+function changeColor(event) {
+    if (mouseDown) {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
 }
 
 const gridItems = document.querySelectorAll('.grid-item');
